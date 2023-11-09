@@ -1,0 +1,239 @@
+@font-face {
+   font-family: BlinkMacSystemFont-Semibold;
+   src: url('../Css/webfonts/BlinkMacSystemFont-Semibold.otf');
+}
+@font-face {
+   font-family: BlinkMacSystemFont-Bold;
+   src: url('../Css/webfonts/BlinkMacSystemFont-Bold.otf');
+}
+
+@font-face {
+   font-family: BlinkMacSystemFont;
+   src: url('./webfonts/BlinkMacSystemFont-Medium.otf');
+}
+
+@font-face {
+   font-family: BlinkMacSystemFont-Regular;
+   src: url('../Css/webfonts/BlinkMacSystemFont-Regular.otf');
+}
+
+@font-face {
+   font-family: san francisco-bold;
+   src: url('./webfonts/SF-UI-Display-Bold.otf');
+}
+
+@font-face {
+   font-family: san francisco-Medium;
+   src: url('./webfonts/._SFNSDisplay-Medium.otf');
+}
+
+.vender{
+      background-color: black
+  
+}
+
+
+.contenedordeltitulo{
+   
+   background-color: black;
+   padding: 25px;
+ 
+   
+}
+
+
+.contenedor-titulo-vender{
+   
+   background-color: black;
+   text-align: center;
+   justify-content: center;
+  
+   
+}
+
+
+.estilos-titulo{
+
+   margin: 20px 20px 10px 20px;
+   text-align: center;
+   font-family: BlinkMacSystemFont-Semibold;
+   color: white;
+   font-size: 2.9rem;
+   
+}
+
+.estilos-titulo2{
+
+   margin: 0px 20px 20px 20px;
+   text-align: center;
+   font-family: BlinkMacSystemFont-Semibold;
+   color: white;
+   font-size: 2.9rem;
+}
+
+div.vender-titulo{
+   background-color: #0E0E0E;
+}
+
+
+div.centrar-inputs{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  
+}
+
+.vender-titulo-color{
+   color: #63DDA8;
+   font-family: BlinkMacSystemFont-Bold;
+   font-weight: 700;
+}
+
+
+
+div.card.mx-auto.box.gradient{
+
+   background-color: #0E0E0E;
+   margin-bottom: 50px;
+   display: none;
+}
+
+
+div>form>div>input,select{
+   border-radius: 5px;
+   border: none;
+   width: 80%;
+   
+}
+
+
+.centrado-de-titulos{
+
+   color: white;
+
+}
+
+
+.centrado-facil{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+.input-alinear{
+   align-items: center;
+   justify-content: center;
+}
+
+.centrado-de-titulos-label{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.ButtonAñadir{
+   padding-top: 5px;
+   height: 30px;
+   border-radius: 7px;
+   border: none;
+   color:black;
+   font-family: BlinkMacSystemFont;
+   width: 45%;
+}
+
+.letralabel{
+   color: white;
+   display: flex;
+   justify-content: center;
+}
+
+.box{
+   position: relative;
+   border: 5px solid transparent;
+   border-radius: 5px;
+  
+}
+
+.gradient{
+   
+   border-image: linear-gradient(to right  ,#85DEFC,#4BFD86)1;
+   border-radius: 5px;
+     
+}
+
+.vender-titulo{
+   text-align: center;
+   padding: 12px 20px 12px 20px;
+   background-color: #EFFBF7;
+   border-bottom: 1px solid #57F7A5;
+}
+
+
+.tamaño-boton-vender{
+   width: 100%;
+}
+
+
+.contenedor{
+   margin-bottom: 100px;
+   margin-top: 0px;
+}  
+
+
+.categorias_boton{
+   align-items: center;
+}
+
+
+
+div#escondercategoria.row.caja-categorias-grande.mx-auto{
+   display: flex;
+}
+.centrar_categorias{
+   align-items: center;
+}
+.categorias_cajas{
+   margin-top: 0px;
+   margin-bottom: 0px;
+   background-color: white; 
+   border-radius: 0px;
+   
+}
+
+
+.categorias_cajas:hover{
+   background-color:#4BFD86;
+
+   
+}
+
+.padding-categorias{
+   padding: 0px;
+}
+
+
+
+.titulocategorias{
+   text-align: center;
+   margin-top: 15px;
+   font-family: BlinkMacSystemFont;
+}
+
+.botton {
+   background: none;
+   border: 0;
+   color: inherit;
+   /* cursor: default; */
+   font: inherit;
+   line-height: normal;
+   overflow: visible;
+   padding: 0;
+   -webkit-user-select: none; /* for button */
+    -webkit-appearance: botton; /* for input */
+      -moz-user-select: none;
+       -ms-user-select: none;
+ }
+
+ 
+

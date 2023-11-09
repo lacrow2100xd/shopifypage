@@ -1,0 +1,413 @@
+@font-face {
+    font-family: san francisco;
+    src: url('./webfonts/SF-Compact-Text-Regular.otf');
+}
+@font-face {
+    font-family: BlinkMacSystemFont;
+    src: url('./webfonts/BlinkMacSystemFont-Medium.otf');
+}
+@font-face {
+    font-family: BlinkMacSystemFont-Regular;
+    src: url('./BlinkMacSystemFont-Regular.otf');
+}
+@font-face {
+    font-family: san francisco-bold;
+    src: url('./webfonts/SF-UI-Display-Bold.otf');
+}
+@font-face {
+    font-family: Gabarito-Bold;
+    src: url('./webfonts/Gabarito-Bold.ttf');
+}
+
+
+
+
+.body-index{
+    background-color: #EBEBEB;
+}
+.itemCarrusel{
+    
+    height: 340px;
+    position: relative;
+}
+
+
+.filtro{
+    display: none;
+}
+#conteItemsCarrusel{
+    
+    height: 340px;
+    overflow: hidden;
+    width: 100%;
+    
+}
+.tarjetaCarrusel{
+    
+    height: 100%;
+    
+}
+.flechasCarrusel{
+    
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+#tarjetaCarrusel-1{
+    background-color: rgb(149, 92, 202);
+}
+#tarjetaCarrusel-2{
+    background-color: rgb(48, 121, 238);
+}
+#tarjetaCarrusel-3{
+    background-color: rgb(72, 192, 225);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.contenedor-grande-iconos{
+
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5em;
+    
+}
+
+.contenedor-iconos{
+    background-color: white;
+    overflow: hidden;
+    width: 79%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow:rgba(0, 0, 0, 0.1)
+
+} 
+
+.item{
+    margin: 1.3em; 
+    padding: 0.5em;
+    
+    float: left;
+    width: 30%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.item1{
+    color:black;
+}
+
+
+.mensaje-contenedor-iconos{
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+
+}
+
+
+
+
+.titulo-contenedor-de-ofertas{
+    display: flex;
+    
+    
+}
+.titulo-ofertas{
+    
+    margin: 0px;
+    margin-left: 172px;
+    display: flex;
+    align-items:flex-end;
+    font-family: BlinkMacSystemFont;
+  
+
+}
+
+.ofertas-link{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-grande-ofertas{
+
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2.5em;
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.contenedor-ofertas{
+
+    background-color: #EBEBEB;
+    overflow: hidden;
+    width: 79%;
+    height: 410px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+
+.item-ofertas{
+ 
+    float: left;
+    width: 30%;
+    height: 50%;
+    margin-right:12px;
+    height: 410px;
+    border-radius: 4px;
+    box-shadow:rgba(0, 0, 0, 0.1);
+}
+
+#itemOferta1{
+    background-color:white;
+}
+#itemOferta2{
+    background-color:white;
+}
+#itemOferta3{
+    background-color:white;
+}
+#itemOferta4{
+    background-color:white;
+}
+#itemOferta5{
+    background-color:white;
+    margin-right: 0px;
+}
+
+#itemOferta6{
+    background-color:white;
+    
+}
+#itemOferta7{
+    background-color:white;
+}
+#itemOferta8{
+    background-color:white;
+}
+#itemOferta9{
+    background-color:white;
+}
+#itemOferta10{
+    background-color:white;
+    margin-right: 0px;
+}
+
+
+
+.imagen-producto{
+    width: 100%;
+    height: 245px;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    padding-right: 30px;
+    align-items: center;
+}
+
+.titulo-producto{
+    margin: 0px,0px,0px,0px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
+.carrito-contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contenedor-price{
+    display: flex;
+    align-items: center;
+}
+
+
+.oferta-porcentaje{
+    color:#79c205;
+    margin-left: 10px;
+    
+
+}
+
+.info-producto{
+    padding-left: 14px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 5px;
+}
+
+
+.Envio_letra{
+    color:#79c205;
+}
+
+figure{
+    margin: 0px;
+}
+
+.Titulo-producto{
+    font-size: 1rem;
+    margin-top: 8px;
+    padding-right: 9px;
+}
+
+.price{
+    font-size: 1.6rem;
+    color:#79c205;
+    font-weight: 420;
+
+}
+
+
+.cuotas-producto{
+    margin-bottom: 2px;
+}
+.carrito-contenedor{
+    margin-top: 8px;
+    align-items: center;
+    justify-content: space-between;
+
+
+}
+
+.icon-cart-productos{
+    width: 35px;
+    height: 35px;
+    stroke: black;
+    align-items:last baseline;
+    justify-content:last baseline;
+    margin-top: 10px;
+    margin-left: 7px;
+    
+}
+
+.icon-cart-productos:hover{
+    stroke:#79c205;
+}
+
+
+.btn.btn-tool{
+    padding-right: 0px;
+   
+}
+
+.full{
+    font-family: BlinkMacSystemFont;
+    font-size: 13px;
+}
+
+
+
+.contenedor-grande-tarjetas{
+    
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5em;
+}
+
+
+.contenedor-tarjetas{
+    background-color: #EBEBEB;
+    overflow: hidden;
+    width: 79%;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow:rgba(0, 0, 0, 0.1)
+
+} 
+
+.itemtarjeta{
+   
+    width: 50%;
+    height: 240px;
+    float: left;
+    display: flex;
+}
+
+
+.itemtarjeta:hover{
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.20);
+}
+
+#itemTarjeta1{
+    background-color:white;
+    margin-right: 7px;
+
+}
+#itemTarjeta2{
+    background-color:white;
+    margin-left: 7px;
+    
+}
+
+
+.texto-Tarjeta{
+    width: 50%;
+    padding-left: 32px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+
+.imagen-Tarjeta{
+    width: 50%;
+}
+
+
+.borde-imagen{
+    border-radius: 0px 4px 4px 0px;
+}
+
+.botton-ver-mas{
+    margin-top: 13px;
+    width: 140px;
+}
+
+.texto-titulo-ofertas-{
+    font-family: Gabarito-Bold;
+    font-size: 1.5rem;
+}
+
+.imperdibles{
+    font-family: san francisco;
+    font-size: 0.9rem;
+}

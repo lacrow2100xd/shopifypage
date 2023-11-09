@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@900&display=swap');
+
+@font-face {
+    font-family: BlinkMacSystemFont;
+    src: url('./webfonts/BlinkMacSystemFont-Medium.otf');
+}
+
+
+header{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    background-image: linear-gradient(to right  ,#85DEFC,#4BFD86);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    
+
+     
+}
+
+.container-buscador{
+    align-items: center;
+    margin-left: 75px;
+    display: flex;
+    
+
+}
+
+#buscador{
+    width: 45vw;
+    padding: 7px;
+    margin-left: 60px;
+    outline: none;
+    border: 5px solid #CCD1E4;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+
+.separador{
+    display: flex;
+    align-items: center;
+    margin-left: 290px;
+    margin-right: 0px;
+
+    
+}
+
+.container-categorias{
+    display: flex;
+    margin-left: 290px;
+
+}
+.nav-link{
+    
+    color: black;
+
+}
+
+.nav-item-dropdown{
+    margin-left: 20px;
+}
+.nav-link2{
+    padding-top: 10px;
+    padding-bottom:0px;
+    margin-left:20px;
+    margin-right:20px;
+    color: black;
+
+}
+
+.nav-link3{ 
+    margin-left:20px;
+    margin-right:20px;
+    color: black;
+}
+
+
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.margen{
+    padding-top: 10px;
+    padding-bottom:0px;
+    margin-left:20px;
+    margin-right:0px;
+}
+
+.menu-horizontal>li>a{
+    display: block;
+    color:black;
+    text-decoration: none;
+   
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 260px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    background-color: #333333;
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    align-items: center;
+    
+        
+}
+
+
+.form-control{
+
+    margin-left: 0px;
+}
+.separacion-header{
+    padding-top: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+   
+}
+ .widget-user-header {
+    background-image: linear-gradient(to left,#A7D0FE,#64D7CA);
+    padding-top: 5px;
+   
+}
+
+
+   
+div.card.card-widget.widget-user{
+    padding-bottom: 9px;
+    
+}
+
+
+input.select2-search__field{
+    margin-left: 0px;
+}
+.content{
+    padding-top: 15px;
+}
+
+.widget-user-username{
+    color: black;
+
+}
+
+.lead{
+    font-family: BlinkMacSystemFont;
+}
+.widget-user-desc{
+    color: black;
+    font-family: BlinkMacSystemFont;
+}
+
+.container-categorias li:hover .menu-vertical{
+    display: block;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+
+}
+.menu-vertical li:hover{
+    background-color: #3483FA;
+}
+
+.menu-vertical li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    padding-bottom: 10px;
+    
+    
+}
+
+.content {
+    z-index: -1;
+}
+
+
+.nav-item-dropdown{
+    list-style: none;
+    
+}
+
+
+.nav-iniciar-sesion{
+    list-style: none;
+}
+
+.icon-cart{
+    width: 35px;
+    height: 35px;
+    stroke:#000;
+}
+
+
+.container-icon{
+    position: relative;
+
+}
+
+.count-products{
+    position: absolute;
+    top:55%;
+    right: 0%;
+    background-color: #000;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    
+
+}
+
+
+
+#contador-productos{
+    font-size: 12px;
+}
+.container-cart-products{
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    background-color: #fff;
+    width: 760px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 8px;
+}
+
+
+.cart-product{
+
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.info-cart-product{
+    display: flex;
+    justify-content: space-between;
+    flex: 0.8
+   
+
+}
+
+
+.cart-empty{
+    padding: 18px;
+    text-align: center;
+}
+
+.titulo-producto-carrito{
+    font-size: 18px;
+}
+
+
+.precio-producto-carrito{
+    font-weight: 700;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.cantidad-producto-carrito{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.icon-close{
+    width: 25px;
+    height: 25px;
+}
+
+
+.icon-close:hover{
+    stroke: #4BFD86;
+    cursor: pointer;
+}
+.cart-total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 5px;
+}
+
+.cart-total h3{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0px;
+    
+}
+
+
+.letradelcomprar{
+  
+    font-family: BlinkMacSystemFont;
+   
+}
+
+
+
+.total-pagar{
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.hidden-cart{
+    display: none;
+}
+
+.registrarperdido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.info-cart-registro{
+    display: flex;
+    justify-content: center;
+    flex: 0.4;
+}
+
+span.total-pagar{
+    text-align: center;
+    align-items: center;
+}

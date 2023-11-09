@@ -1,0 +1,162 @@
+
+@font-face {
+    font-family: san francisco;
+    src: url('./webfonts/SF-Compact-Text-Regular.otf');
+}
+
+
+@font-face {
+    font-family: san francisco-bold;
+    src: url('./webfonts/SF-UI-Display-Bold.otf');
+}
+@font-face {
+    font-family: BlinkMacSystemFont;
+    src: url('./webfonts/BlinkMacSystemFont-Medium.otf');
+}
+
+
+
+
+body{
+    background-image: url('../Img/descarga.jpg');
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+a{
+    font-family: BlinkMacSystemFont;
+    
+}
+
+.login-box-registro{
+    width: 500px;
+}
+
+.login-box-msg{
+    font-family: san francisco-bold;
+    color: #212b36;
+
+}
+
+
+.login-box-msg2{
+    font-family: san francisco-bold;
+    color: #212b36;
+    display: grid;
+    place-items: left;
+    margin-top: 10px;
+
+}
+
+
+
+.card{
+    box-shadow: 6px 12px 60px rgba(0,0,0,0.2);   
+}
+
+
+.card2{
+    box-shadow: 6px 12px 60px rgba(0,0,0,0.2);
+
+
+}
+.separador{
+    padding: 0px;
+    color: #8C9196;
+}
+
+.card-body{
+
+    border-radius: 8px;
+   
+ 
+}
+
+.msj-continuar{
+    margin-bottom: 15px;
+    font-family: BlinkMacSystemFont;
+}
+
+.estilos-continuar{
+    border: 1px solid #BABFC3;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 61px;
+    padding-right: 61px;
+    border-radius: 8px;
+    background-color: white;
+    font-family: BlinkMacSystemFont;
+    margin-top: 10px;
+
+    
+}
+
+
+.estilos-iniciar-sesion{
+    border: 1px solid #BABFC3;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background-color: #303030;
+    border-radius: 8px;
+}
+.estilos-iniciar-sesion:hover{
+    background-color: #1A1A1A;
+}
+
+
+.login-logo{
+    margin-bottom: 10px;
+}
+.estilos-continuar2{
+    border: 1px solid #BABFC3;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 77px;
+    padding-right: 77px;
+    border-radius: 8px;
+    background-color: white;
+    font-family: BlinkMacSystemFont;
+    margin-top: 10px;
+}
+    
+.estilos-continuar3{
+    border: 1px solid #BABFC3;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 73px;
+    padding-right: 73px;
+    border-radius: 8px;
+    background-color: white;
+    font-family: BlinkMacSystemFont;
+    margin-top: 10px;
+}
+
+.estilos-continuar:hover{
+    background-color: #F6F6F7;
+
+}
+.estilos-botton{
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: #303030;
+    border-radius: 8px;
+
+}
+
+
+.estilos-botton:hover{
+    background-color: #1A1A1A;
+}
+
+
+.mb-0{
+    font-size: 90%;
+}

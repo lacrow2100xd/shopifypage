@@ -1,0 +1,43 @@
+.barra-vertical{
+    background-color: white;
+}
+
+.margin-imagen-producto{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+
+
+.titulo-producto-a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.titulo-producto-a:visited{
+    color: black;
+}
+
+
+.titulo-producto-a:hover{
+    color: black;
+}
+
+
+
+.sinestilobotton {
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    -webkit-user-select: none; /* for button */
+     -webkit-appearance: botton; /* for input */
+       -moz-user-select: none;
+        -ms-user-select: none;
+  }

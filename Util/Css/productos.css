@@ -1,0 +1,127 @@
+@font-face {
+    font-family: BlinkMacSystemFont-Semibold;
+    src: url('../Css/webfonts/BlinkMacSystemFont-Semibold.otf');
+}
+@font-face {
+    font-family: BlinkMacSystemFont;
+    src: url('./webfonts/BlinkMacSystemFont-Medium.otf');
+}
+@font-face {
+    font-family: Compact-Text-Regular;
+    src: url('./SF-Compact-Text-Regular.otf');
+}
+@font-face {
+    font-family: BlinkMacSystemFont-Regular;
+    src: url('../Css/webfonts/BlinkMacSystemFont-Regular.otf');
+}
+@font-face {
+    font-family: san francisco-bold;
+    src: url('./webfonts/SF-UI-Display-Bold.otf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Poppins&display=swap');
+
+
+.color_fondo{
+    background-color: #EBEBEB;
+}
+
+.filtrar{
+    font-family: BlinkMacSystemFont-Semibold;
+}
+
+.barra-vertical{
+  
+    background-color: #EBEBEB;
+    
+}
+
+
+
+.list-group-item{
+    list-style-type:none;
+    overflow: hidden;
+}
+
+
+.list-inside{
+    list-style-type: none;
+    
+}
+
+.list-item--click{
+    cursor: pointer;
+}
+
+.list_button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 0 auto;
+    font-family: BlinkMacSystemFont-Semibold;
+    font-weight: 800;
+    padding-bottom: 1em;
+}
+
+
+.arrow .list_arrow{
+    transform: rotate(180deg);   
+}
+.list_arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+
+.separador-lista-inside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav_link{
+    display: block;
+    padding: 10px 0;
+    text-decoration: none;
+    color: black;
+   
+    
+}
+
+
+.ul{
+    padding-inline-start: 40px;
+
+}
+
+
+.nav_link--inside{
+    border-radius: 6px;
+    padding-left: 20px;
+}
+
+
+
+.nav_link--inside:hover{
+    background-color: #F6F8FA;
+}
+
+.list_show{
+    width:95%;
+    margin: auto;
+    transition: height .4s;
+    height: 0;
+}
+
+ul.list_show{
+    padding: 0px;
+}
+
+
+.form-check-label{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+   
+}
+
