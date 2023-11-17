@@ -36,7 +36,7 @@ class Usuario{
         
     }
     function obtener_datos($user){
-        $sql="SELECT * FROM usuarios JOIN tipo_usuario ON usuarios.id_tipo = tipo_usuario.id
+        $sql="SELECT * FROM usuarios JOIN tipo_usuario ON usuarios.id_tipo = tipo_usuario.id_tipo
                 WHERE usuarios.id=:user";
         $query = $this->acceso->prepare($sql);
         $query->execute(array(':user'=>$user));
@@ -83,8 +83,51 @@ class Usuario{
             );  
             $query->execute($variables);
         }
-        
-        
+    
+    }
+
+    function editardatos($id_usuario,$user,$pass,$nombres,$apellidos,$email,$nombre){
+        if($nombre!=''){
+            $sql="UPDATE usuarios SET 
+            user=:user,
+            pass=:pass,
+            nombres=:nombres,
+            apellidos=:apellidos,
+            email=:email,
+            avatar=:avatar
+            WHERE   id=:id_usuario";
+                $query = $this->acceso->prepare($sql);
+                $variables = array(
+
+                ':id_usuario'=>$id_usuario,
+                ':user'=>$user,
+                ':pass'=>$pass,
+                ':nombres'=>$nombres,
+                ':apellidos'=>$apellidos,
+                ':email'=>$email,
+                ':avatar'=>$nombre
+            );  
+        $query->execute($variables);
+        }else{
+            $sql="UPDATE usuarios SET  user=:user,
+                                  pass=:pass,
+                                  nombres=:nombres,
+                                  apellidos=:apellidos,
+                                  email=:email
+                WHERE   id=:id_usuario";
+            $query = $this->acceso->prepare($sql);
+            $variables = array(
+            ':id_usuario'=>$id_usuario,
+            ':user'=>$user,
+            ':pass'=>$pass,
+            ':nombres'=>$nombres,
+            ':apellidos'=>$apellidos,
+            ':email'=>$email,
+            
+            );  
+            $query->execute($variables);
+        }
+
     }
 
 }

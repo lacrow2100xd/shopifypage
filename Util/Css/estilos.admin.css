@@ -1,0 +1,10 @@
+
+
+.colornegrilla{
+    color: black;
+}
+
+button.btn.btn-primary.mb-2{
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+}

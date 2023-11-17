@@ -108,18 +108,24 @@
 						</svg>
 					</div>
           </div>
-					<div class="info-cart-registro" id="info-cart-registro">
+					  <div class="info-cart-registro" id="info-cart-registro">
+            <form id="form_pedido">
 					
               <div class="cart-total">
+                
+                <input type="hidden" id="montototal" class="montototal">
+                
+               
                 <h3>Total:</h3>
-                <input type="hidden" id="monto"><span class="total-pagar" id="total-pagar">$ vacio</span>
+                <span class="total-pagar" id="total-pagar">$ vacio</span>
               </div>
 
               <div class="registrarperdido">
-                <button type="submit" class="btn btn-outline-success letradelcomprar subirpedido"><i class="bi bi-bag"></i> comprar</button>
+                <button type="button" class="btn btn-outline-success letradelcomprar subirpedido" id="subirpedido"><i class="bi bi-bag"></i> comprar</button>
               </div>
+            </form>
             </div>
-          </form>
+          
 				
           </div>
 			</div>
@@ -138,7 +144,7 @@
         </div>
       </li>
     </div>
-    <br></br>
+    
     
 </div>
 <div class="container-categorias">

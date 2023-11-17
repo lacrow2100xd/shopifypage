@@ -30,7 +30,7 @@ include("Layouts/general/header.php");
               <input type="text" name="email_mod" class="form-control" id="email_mod" placeholder="Ingrese email">
           </div>
           <div class="form-group">
-              <label for="telefono_mod">Email</label>
+              <label for="telefono_mod">Numero</label>
               <input type="text" name="telefono_mod" class="form-control" id="telefono_mod" placeholder="Ingrese telefono">
           </div>
           <div class="form-group">

@@ -23,11 +23,23 @@ if($_POST['funcion']=='llenar_productos'){
 $jsonstring = json_encode($json);
 echo $jsonstring;
 
-if($_POST['funcion']=='insertar_pedido'){
-    $montototal = $_POST['montototal'];
-    $productos->insertar_pedido($montototal);
-    echo 'success';
-  
-}
 
 }
+
+
+if($_POST['funcion']=='insertar_pedido'){
+   
+    $productos->insertar_pedido( 
+        $_POST["montototal"],
+        $nombres=$_SESSION['nombres'],
+        $apellidos=$_SESSION['apellidos'],
+        $email=$_SESSION['email'],
+        $telefono=$_SESSION['telefono'],
+    );
+
+
+}
+
+
+
+

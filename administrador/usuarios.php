@@ -11,16 +11,122 @@
 
     <title>SB Admin 2 - Blank</title>
 
+    
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
-
+        <script src="https://kit.fontawesome.com/3595361601.js" crossorigin="anonymous"></script>
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/3595361601.js" crossorigin="anonymous"></script>
+
+    <link href="./vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="../Util/Css/estilos.admin.css" rel="stylesheet">
+    <link rel="stylesheet" href="../Util/Css/toastr.min.css">
+
+
+
+    <link rel="stylesheet"  href="../Util/Css/sweetalert2.min.css">
 
 </head>
+
+<div class="modal fade" id="modaldatos" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><b class="colornegrilla">Editar usuario</b></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="form-datos" enctype="multipart/form-data">
+          <div class="form-group">
+              <label for="user"><b class="colornegrilla">Usuario</b></label>
+              <input type="text" name="user" class="form-control" id="user" placeholder="Ingrese usuario">
+          </div>
+          <div class="form-group">
+              <label for="pass"><b class="colornegrilla">Contraseña</b></label>
+              <input type="text" name="pass" class="form-control" id="pass" placeholder="Ingrese telefono">
+          </div>
+          <div class="form-group">
+              <label for="nombres_mod"><b class="colornegrilla">Nombre</b> </label>
+              <input type="text" name="nombres_mod" class="form-control" id="nombres_mod" placeholder="Ingrese nombres">
+          </div>
+          <div class="form-group">
+              <label for="apellidos_mod"><b class="colornegrilla">Apellidos</b></label>
+              <input type="text" name="apellidos_mod" class="form-control" id="apellidos_mod" placeholder="Ingrese apellidos">
+          </div>
+          <div class="form-group">
+              <label for="email_mod"><b class="colornegrilla">Email</b></label>
+              <input type="text" name="email_mod" class="form-control" id="email_mod" placeholder="Ingrese email">
+          </div>
+          
+          <div class="form-group">
+            <label for="exampleInputFile"><b class="colornegrilla">Avatar</b></label>
+            <div class="input-group">
+              <div class="custom-file">
+                <input type="file" class="custom-file-input" name="avatar_mod" id="avatar_mod">
+                <label class="custom-file-label" for="exampleInputFile">Seleccione un avatar</label>
+              </div>
+                      
+            </div>
+         </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary editar_datos">Guardar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="modal_direcciones" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Agregar direccion</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="form-direccion">
+          <div class="form-group">
+            <label>Departamento: </label>
+            <select id="departamento" class="form-control" style="width:100%" required></select>
+
+          </div>
+          <div class="form-group">
+            <label>Municipios: </label>
+            <select id="municipios" class="form-control" style="width:100%" required></select>
+
+          </div>
+          <div class="form-group">
+            <label>Direccion: </label>
+            <input id="direccion" class="form-control" style="width:100%" placeholder="ingrese su direccion"required>
+
+          </div>
+          <div class="form-group">
+            <label>Referencia: </label>
+            <input id="referencia" class="form-control" style="width:100%" placeholder="ingrese alguna referencia">
+
+          </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="submit" class="btn btn-primary">Crear</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 <body id="page-top">
 
@@ -31,65 +137,46 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.htm       l">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.php">
+                <div class="sidebar-brand-icon rotate-n-10">
+                <i class="fa-brands fa-shopify"></i>
+                     
                 </div>
-                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+                <div class="sidebar-brand-text mx-3"> Admin</div>
             </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <i class="fa-solid fa-shop"></i>
+            <li class="nav-item active">
+                <a class="nav-link" href="index.php">
+                <i class="bi bi-house"></i>
+                    <span>Inicio</span></a>
             </li>
 
             <!-- Divider -->
-            <hr class="sidebar-divider">
+           
 
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Interface
-            </div>
+
 
             <!-- Nav Item - Pages Collapse Menu -->
+
+
+           
+             <li class="nav-item">
+                <a class="nav-link" href="usuarios.php">
+                    <i class="bi bi-people-fill"></i>
+                    <span>Usuarios</span></a>
+            </li>
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-cog"></i>
-                    <span>Components</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item" href="cards.html">Cards</a>
-                    </div>
-                </div>
+                <a class="nav-link" href="categorias.php">
+                <i class="bi bi-tags-fill"></i> 
+                    <span>Categorias</span></a>
             </li>
 
-            <!-- Nav Item - Utilities Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                    aria-expanded="true" aria-controls="collapseUtilities">
-                    <i class="fas fa-fw fa-wrench"></i>
-                    <span>Utilities</span>
-                </a>
-                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
-                    data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
-                        <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a>
-                    </div>
-                </div>
-            </li>
+
+           
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -100,7 +187,7 @@
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item active">
+            <li class="nav-item ">
                 <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
                     aria-controls="collapsePages">
                     <i class="fas fa-fw fa-folder"></i>
@@ -360,9 +447,79 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+                    <h1 class="h3 mb-2 text-gray-800">Listado de usuarios</h1>
+                    <legend></legend>
+
+                    
+
+                    <!-- DataTales Example -->
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary"> Usuarios</h6>
+                        </div>
+                        
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">Usuario</th>
+                                            <th class="text-center">Contraseña</th>
+                                            <th class="text-center">Nombre</th>
+                                            <th class="text-center">Email</th>
+                                            <th class="text-center">Rol</th>
+                                            <th class="text-center"></th>
+                                        </tr>
+                                    </thead>
+                                    <?php 
+                                    require_once("../Config/conex.php");
+                                    $query="SELECT 
+                                    usuarios.id,
+                                    usuarios.user,
+                                    usuarios.pass,
+                                    usuarios.nombres,
+                                    usuarios.apellidos,
+                                    usuarios.email,
+                                    usuarios.avatar,
+                                    usuarios.id_tipo,
+                                    tipo_usuario.id_tipo,
+                                    tipo_usuario.tipo
+                                    FROM usuarios INNER JOIN tipo_usuario on usuarios.id_tipo = tipo_usuario.id_tipo WHERE usuarios.estado='A'";
+                                     $execute=mysqli_query($enlace,$query) or die(mysqli_error($enlace));
+
+                   
+                                    while($fila=mysqli_fetch_array($execute)){
+
+                                    ?>
+                                    <tbody>
+                                        <tr>
+                                            
+                                            <th class="text-center"><?php echo $fila['user'] ?></th>
+                                            <th class="text-center"><?php echo $fila['pass'] ?></th>
+                                            <th class="text-center"><?php echo $fila['nombres'].' '.$fila['apellidos'] ?> </th>
+                                            <th class="text-center"><?php echo $fila['email'] ?></th>
+                                            <th class="text-center"><?php echo $fila['tipo'] ?></th>
+                                            <th class="text-center">
+                                            <button onClick="eliminar(<?php echo $fila['id'] ?>);" id="<?php echo$fila['id']?>" class="btn btn-danger btn-sm eliminar_usuario "><i class="fa-solid fa-user-xmark"></i></span></button>
+                                            <button onClick="editar(<?php echo $fila['id'] ?>);" id="<?php echo$fila['id']?>" class="btn btn-success btn-sm"><i class="fa-solid fa-user-pen"></i></button>
+                                            </th>
+                                        </tr>
+                                        
+                                    </tbody>
+                                    <?php 
+                                     }
+                                    ?>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
+
+                <div>
+        
+
+                
                 <!-- /.container-fluid -->
 
             </div>
@@ -418,6 +575,16 @@
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+    <!-- Page level plugins -->
+    <script src="./vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="./vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="./js/demo/datatables-demo.js"></script><
+    <script src="./usuarios.js"></script>
+    <script src="../Util/js/sweetalert2.min.js"></script>
+    <script src="../Util/js/toastr.min.js"></script>
+        
 
 </body>
 

@@ -1,11 +1,8 @@
 $(document).ready(function() {
 
-
-
     var funcion;
 
     verificar_sesion();
-
     
     
     function verificar_sesion(){

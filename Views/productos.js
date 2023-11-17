@@ -75,7 +75,7 @@ $(document).ready(function() {
         funcion="llenar_productos";
         $.post('../Controllers/productos.php', { funcion } , (response)=>{
             
-            
+            console.log(response);
             let productos=JSON.parse(response);
             let contador=0;
             let template = '';
@@ -158,6 +158,10 @@ const productsList = document.querySelector('.contenedor-productos')
 let allProducts = []
 
 const valorTotal = document.querySelector('.total-pagar')
+
+const montototal = document.querySelector('.montototal')
+
+const ejemplo1 = document.querySelector('.ejemplo1')
 
 
 
@@ -268,44 +272,48 @@ const showHTML = () => {
 
     valorTotal.innerText = `$${total}`;
     countProducts.innerText = totalOfProducts;
-
+    
+    $('#montototal').val(total);
 
 };
 
-
-$('#detallespedidoproductos').submit(e =>{
-
-    funcion = 'insertar_pedido';
-
-
-    let montototal=$('#total-pagar').val();
-
-    console.log(montotal);
-    e.preventDefault();
-   
-    $.post('../Controllers/productos.php',  {montototal,funcion},
-    (response)=>{
-        console.log(response);
-        if(response=='success'){
-            Swal.fire({
-                title: 'Correcto!',
-                text: 'Se Registro Correctamente',
-                icon: 'success',
-                confirmButtonText: 'Aceptar'
-            })
-
-        }else {
-            swal.fire({
-                title: '¡error!',
-                text: 'Error',
-                icon: 'Hubo un conflicto al registrarse, comuniquese con el area de sistemas',
-                confirmButtonText: 'Aceptar'
+$(document).on("click", "#subirpedido", function(){
   
-              })
-        }
-    })
-    e.preventDefault();
-})
+    funcion = 'insertar_pedido';
+    $.post("../Controllers/productos.php",{ 
+        funcion : funcion,
+        montototal : $('#montototal').val()
+    }, function (data) {        
+    });
+    Swal.fire({
+        title:'Correcto',
+        text:'Compra registrada correctamente',
+        icon: 'success',
+        confirmButtonText:'Aceptar'
+    });
+});
+
+
+
+
+// $(document).on("click", "#subirpedido", function(){
+    
+  
+//     funcion = 'insertar_pedido';
+
+//     let montopedido=$('#montototal').val();
+//     console.log(montopedido);
+
+    
+
+//     $.post('../Controllers/productos.php',  {montopedido,funcion}, (response)=>{
+        
+//         console.log(response);
+        
+//     })
+//     e.preventDefault();
+
+// });
 
 
 // $(document).on('click','.subirpedido',(e)=>{
@@ -332,7 +340,15 @@ $('#detallespedidoproductos').submit(e =>{
 
 
 
+    // console.log(montopedido);
 
+    // e.preventDefault();
+ 
+    // let montototal=$('#total-pagar').html();
+
+    // montototal=montototal.slice(1)
+
+    // console.log(montototal);
 
 
 })
